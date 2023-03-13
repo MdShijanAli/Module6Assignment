@@ -7,17 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Registration Successful</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.3/dist/full.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css">
 </head>
 
 <body>
-    <h2 class="text-center text-3xl mt-20">Registration Successful</h2>
+    <h2 class="text-center text-3xl pt-20">Registration Successful</h2>
     <p class="text-center">Thank you for registering!</p>
 
 
 
-    <div class="w-3/4 mx-auto my-12 ">
-        <table class="table w-full border-2 border-indigo-600">
+    <div class="w-3/4 mx-auto py-12">
+        <table class="table table-zebra w-full border-2 border-[black]">
             <!-- head -->
             <thead>
                 <tr>
@@ -29,7 +30,7 @@
             </thead>
 
 
-            <tbody class="border-2 border-indigo-600">
+            <tbody class="border-2 ">
 
                 <?php
                 // read users data from CSV file
@@ -37,7 +38,7 @@
 
 
                 while (($data = fgetcsv($file)) !== false) {
-                    echo '<tr>';
+                    echo '<tr class="hover">';
 
                     echo '<td>
                    <div class="flex items-center space-x-3">
